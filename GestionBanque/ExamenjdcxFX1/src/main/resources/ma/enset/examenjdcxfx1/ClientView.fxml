@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="450.0" prefWidth="676.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ma.enset.examenjdcxfx1.presentation.controller.ClientController">
+   <children>
+      <Label layoutX="44.0" layoutY="66.0" prefHeight="17.0" prefWidth="42.0" text="Prenom" />
+      <Label layoutX="238.0" layoutY="66.0" prefHeight="17.0" prefWidth="64.0" text="Telephone" />
+      <Label layoutX="44.0" layoutY="23.0" prefHeight="17.0" prefWidth="42.0" text="Nom" />
+      <Label layoutX="238.0" layoutY="23.0" prefHeight="17.0" prefWidth="42.0" text="Cin" />
+      <TextField fx:id="labelNom" layoutX="99.0" layoutY="23.0" prefHeight="0.0" prefWidth="124.0" />
+      <TextField fx:id="labelPrenom" layoutX="93.0" layoutY="62.0" prefHeight="0.0" prefWidth="124.0" />
+      <TextField fx:id="labelEmail" layoutX="465.0" layoutY="19.0" prefHeight="0.0" prefWidth="124.0" />
+      <TextField fx:id="labelCin" layoutX="290.0" layoutY="19.0" prefHeight="0.0" prefWidth="124.0" />
+      <TextField fx:id="labelTelephone" layoutX="309.0" layoutY="62.0" prefHeight="25.0" prefWidth="105.0" />
+      <DatePicker fx:id="datePickerlabel" layoutX="465.0" layoutY="62.0" prefHeight="25.0" prefWidth="131.0" />
+      <Label layoutX="423.0" layoutY="27.0" prefHeight="17.0" prefWidth="42.0" text="Email" />
+      <Label layoutX="423.0" layoutY="66.0" prefHeight="17.0" prefWidth="42.0" text="date" />
+      <Button fx:id="supprimerButton" layoutX="352.0" layoutY="116.0" mnemonicParsing="false" onAction="#supprimerClient" text="Supprimer" />
+      <Button fx:id="ajouterButton" layoutX="290.0" layoutY="116.0" mnemonicParsing="false" onAction="#ajouterClient" text="Ajouter" />
+      <TextField fx:id="chercherLabel" layoutX="138.0" layoutY="116.0" prefHeight="0.0" prefWidth="124.0" />
+      <Label layoutX="33.0" layoutY="120.0" prefHeight="17.0" prefWidth="105.0" text="ChercherParMot" />
+      <ListView fx:id="listViewCompteClient" layoutX="34.0" layoutY="351.0" prefHeight="60.0" prefWidth="537.0" />
+      <TextField fx:id="labelAfficherCompteClient" layoutX="34.0" layoutY="315.0" prefHeight="25.0" prefWidth="72.0" />
+      <Button fx:id="afficherLescomptesButton" layoutX="127.0" layoutY="315.0" mnemonicParsing="false" text="Afficher" />
+      <TableView fx:id="tableViewClient" layoutX="38.0" layoutY="164.0" prefHeight="138.0" prefWidth="609.0">
+        <columns>
+          <TableColumn fx:id="colonneID" prefWidth="45.0" text="ID" />
+          <TableColumn fx:id="colonneNom" prefWidth="70.0" text="Nom" />
+            <TableColumn fx:id="colonnePrenom" prefWidth="70.0" text="Prenom" />
+            <TableColumn fx:id="colonneCIN" prefWidth="73.0" text="Cin" />
+            <TableColumn fx:id="colonneTelephone" text="Telephone" />
+            <TableColumn fx:id="colonneEmail" prefWidth="123.0" text="Email" />
+            <TableColumn fx:id="colonneDate" prefWidth="181.0" text="Date de naissance" />
+        </columns>
+      </TableView>
+   </children>
+
+</AnchorPane>

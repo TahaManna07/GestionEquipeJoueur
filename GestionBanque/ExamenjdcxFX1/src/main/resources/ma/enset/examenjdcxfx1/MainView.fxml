@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+
+<AnchorPane stylesheets="/ma/enset/examenjdcxfx1/styles.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ma.enset.examenjdcxfx1.presentation.controller.MainController">
+
+
+    <VBox alignment="TOP_CENTER" prefHeight="597.0" prefWidth="825.0" spacing="10">
+        <Label style="-fx-font-size: 18; -fx-font-weight: bold;" text="Banque" />
+
+        <TabPane prefWidth="600" side="LEFT" tabClosingPolicy="UNAVAILABLE">
+            <!-- Onglet Comptes -->
+            <Tab text="Compte">
+                <content>
+                    <fx:include source="CompteView.fxml" />
+                </content>
+            </Tab>
+
+            <!-- Onglet Clients -->
+            <Tab text="Client">
+                <content>
+                    <fx:include source="ClientView.fxml" />
+                </content>
+            </Tab>
+        </TabPane>
+    </VBox>
+</AnchorPane>
